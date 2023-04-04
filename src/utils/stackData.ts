@@ -1,4 +1,3 @@
-import { TbBrandNextjs } from "react-icons/tb";
 import {
 	SiPostgresql,
 	SiTypescript,
@@ -6,6 +5,7 @@ import {
 	SiMysql,
 	SiExpress,
 	SiStyledcomponents,
+	SiVite,
 } from "react-icons/si";
 import {
 	FaGit,
@@ -45,7 +45,7 @@ export const stackData = [
 		title: "React",
 		img: FaReact,
 	},
-	// { title: "Next.js", img: TbBrandNextjs },
+	{ title: "Vite", img: SiVite },
 	{ title: "Express.js", img: SiExpress },
 	{ title: "Django", img: SiDjango },
 	{ title: "MySQL", img: SiMysql },
