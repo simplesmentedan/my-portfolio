@@ -31,3 +31,11 @@ export const Footer = styled("footer", {
     },
   },
 });
+
+export const SocialImage = styled("img", {
+  borderRadius: "50%",
+  "@mobile": {
+    width: "2.25rem",
+    height: "2.25rem",
+  },
+});
