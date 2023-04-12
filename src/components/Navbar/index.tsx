@@ -36,7 +36,7 @@ export const NavBar = (): JSX.Element => {
 			<Container>
 				<NavbarMobileArea>
 					<LogoTipo>
-						<LogoTipoText>{userData.nameUser}</LogoTipoText>
+						<LogoTipoText as="a" href={`#about-me`}>{userData.nameUser}</LogoTipoText>
 					</LogoTipo>
 					{isWide && (
 						<Button
@@ -61,7 +61,7 @@ export const NavLinks = (): JSX.Element => {
 				Home
 			</Button>
 			<Button type="btLink" as="a" color="grey4" href={`#about-me`}>
-				Who am I?
+				About me
 			</Button>
 			<Button type="btLink" as="a" color="grey4" href={`#projects`}>
 				Projects
