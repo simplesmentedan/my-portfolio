@@ -46,8 +46,25 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Opaaa, me chamo {userData.nameUser}</Text>
             </Flex>
+            <Text as="p" color="grey2" type="body1">
+              Hey, allow to introduce my history, as you know, my name is Daniel
+              Lobato, I am a young amapaense who, since I was 15 years old, have
+              been interested in technology as a focus on the future... [ this
+              section is in progress... ]
+            </Text>
+
+            <AboutMeArea>
+              <Container>
+                <AboutMeCardContent>
+                  <Text as="h2" type="heading4" color="grey4">
+                    About me
+                  </Text>
+                </AboutMeCardContent>
+              </Container>
+            </AboutMeArea>
+
             <Text as="h1" type="heading1" color="grey5">
               I{" "}
               <Text as="span" type="heading1" color="brand1">
@@ -81,7 +98,7 @@ export const Home = (): JSX.Element => {
                 <FaGithub />
               </Button>
             </HeaderButtonsArea>
-            <StackCards>
+            <StackCards id="stacks">
               {stackData.map((stack, index) => (
                 <Stack key={index} title={stack.title} icon={stack.img} />
               ))}
@@ -89,21 +106,6 @@ export const Home = (): JSX.Element => {
           </HeaderContent>
         </Container>
       </Header>
-      <AboutMeArea id="about-me">
-        <Container>
-          <AboutMeCardContent>
-            <Text as="h2" type="heading4" color="grey4">
-              About me
-            </Text>
-            <Text as="p" color="grey2" type="body1">
-              Hey, allow to introduce my history, as you know, my name is Daniel
-              Lobato, I am a young amapaense who, since I was 15 years old, have
-              been interested in technology as a focus on the future... [ this
-              section is in progress... ]
-            </Text>
-          </AboutMeCardContent>
-        </Container>
-      </AboutMeArea>
       <ProjectsArea id="projects">
         <Container>
           <ProjectAreaWrapperColumns>
