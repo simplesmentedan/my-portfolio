@@ -36,7 +36,7 @@ export const NavBar = (): JSX.Element => {
 			<Container>
 				<NavbarMobileArea>
 					<LogoTipo>
-						<LogoTipoText as="a" href={`#about-me`}>{userData.nameUser}</LogoTipoText>
+						<LogoTipoText as="a" href={`#home`}>{userData.nameUser}</LogoTipoText>
 					</LogoTipo>
 					{isWide && (
 						<Button
